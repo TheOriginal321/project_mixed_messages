@@ -10,21 +10,19 @@ const weatherConditions = [
     "Extra Dusty",
     "Unbelievably Dusty",
     "Raining Cats and Dogs",
-    "Tornado Warning!",
     "Hailing (Golfball size)",
     "Hailing (Baseball size)"
 ]
 
 //Function to 'predict' weather for given time period
-const prediction = (timeOfDay) => {
-    
+const prediction = () => {
+    return weatherConditions[Math.floor(Math.random() * weatherConditions.length)]
 }
 //Function to return 'predicted' weather for the morning, afternoon, and night
 const weatherToday = () => {
-    let morn = 
-    return 'This morning will be ${}
+    return `This morning will be ${prediction()}, it will be ${prediction()} this afternoon, and tonight without a doubt will be ${prediction()}.`
 }
 
 
 //Test Area
-console.log(weatherConditions.length);
+console.log(weatherToday())
