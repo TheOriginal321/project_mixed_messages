@@ -14,6 +14,17 @@ const weatherConditions = [
     "Hailing (Golfball size)",
     "Hailing (Baseball size)"
 ]
-//Function to return 'predicted' weather for the morning, afternoon, and night
 
-//Test
+//Function to 'predict' weather for given time period
+const prediction = (timeOfDay) => {
+    
+}
+//Function to return 'predicted' weather for the morning, afternoon, and night
+const weatherToday = () => {
+    let morn = 
+    return 'This morning will be ${}
+}
+
+
+//Test Area
+console.log(weatherConditions.length);
